@@ -16,7 +16,7 @@ module.exports = {
     "database": DB_NAME,
     "host": DB_HOST,
     "port": DB_PORT,
-    "dialect": "mariadb",
+    "dialect": DB_DIALECT,
     "allowPublicKeyRetrieval": true
   },
   "production": {
@@ -25,7 +25,7 @@ module.exports = {
     "database": DB_NAME,
     "host": DB_HOST,
     "port": DB_PORT,
-    "dialect": "mariadb",
+    "dialect": DB_DIALECT,
     "allowPublicKeyRetrieval": true
   }
 }
