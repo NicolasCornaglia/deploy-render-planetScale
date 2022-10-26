@@ -7,7 +7,8 @@ module.exports = {
     "database": DB_NAME,
     "host": DB_HOST,
     "port": DB_PORT,
-    "dialect": "mariadb"
+    "dialect": "mariadb",
+    "allowPublicKeyRetrieval": true
   },
   "test": {
     "username": DB_USER,
@@ -15,7 +16,8 @@ module.exports = {
     "database": DB_NAME,
     "host": DB_HOST,
     "port": DB_PORT,
-    "dialect": "mariadb"
+    "dialect": "mariadb",
+    "allowPublicKeyRetrieval": true
   },
   "production": {
     "username": DB_USER,
@@ -23,6 +25,7 @@ module.exports = {
     "database": DB_NAME,
     "host": DB_HOST,
     "port": DB_PORT,
-    "dialect": "mariadb"
+    "dialect": "mariadb",
+    "allowPublicKeyRetrieval": true
   }
 }
