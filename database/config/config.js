@@ -1,4 +1,4 @@
-const {DB_NAME, DB_HOST, DB_PASSWORD, DB_USER, DB_PORT} = require('../../configDB.js');
+const {DB_NAME, DB_HOST, DB_PASSWORD, DB_USER, DB_PORT, DB_DIALECT} = require('../../configDB.js');
 
 module.exports = {
   "development": {
@@ -7,7 +7,7 @@ module.exports = {
     "database": DB_NAME,
     "host": DB_HOST,
     "port": DB_PORT,
-    "dialect": "mariadb",
+    "dialect": DB_DIALECT,
     "allowPublicKeyRetrieval": true
   },
   "test": {
