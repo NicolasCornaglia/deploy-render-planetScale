@@ -11,7 +11,7 @@ const productRoutes = require("./routes/product");
 const apiUsersRoutes = require("./routes/apiUsersRoutes")
 const apiProductsRoutes = require("./routes/apiProductsRoutes")
 const cookies = require("cookie-parser")
-const session = require("cookie-session");
+const session = require("express-session");
 const publicPath = path.resolve(__dirname, "./public");
 const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
 

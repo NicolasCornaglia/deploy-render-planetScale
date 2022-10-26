@@ -1,4 +1,3 @@
-
 const PORT = process.env.PORT || 3001;
 const DB_HOST = process.env.DB_HOST || "127.0.0.1";
 const DB_USER = process.env.DB_USER || 'root';

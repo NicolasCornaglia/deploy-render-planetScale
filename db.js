@@ -1,4 +1,4 @@
-// conection to database in railway
+/* // conection to database in railway, didnt work
 const { createPool } = require("mysql2/promise");
 const {DB_NAME, DB_HOST, DB_PASSWORD, DB_USER, DB_PORT, DB_DIALECT} = require('./configDB');
 
@@ -14,4 +14,4 @@ const pool = createPool({
 })
 
 
-module.exports = { pool };
+module.exports = { pool }; */
