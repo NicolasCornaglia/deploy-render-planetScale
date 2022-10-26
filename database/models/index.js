@@ -10,12 +10,14 @@ const db = {};
 
 let sequelize;
 if (config.use_env_variable) {
-  console.log('exists config.use_env_variable')
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
 } else {
+  console.log("config file: ", config)
   sequelize = new Sequelize(config.database, config.username, config.password,
-    /* agregado este -> */ config.dialect,
-    /* agregado este -> */ config.allowPublicKeyRetrieval,
+    config.allowPublicKeyRetrieval,
+    {
+      dialect: config.dialect
+    },
     config);
 }
 
