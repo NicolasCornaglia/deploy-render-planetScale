@@ -12,14 +12,15 @@ let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
 } else {
-  console.log("config file: ", config)
+  console.log("config file: ", config, config.dialect)
   sequelize = new Sequelize(config.database, config.username, config.password,
-    config.allowPublicKeyRetrieval,
     {
       host: config.host,
-      dialect: /* config.dialect */ 'mariadb'
+      dialect: config.dialect,
     },
-    config);
+    config.allowPublicKeyRetrieval,/* ,
+    config */);
+    console.log("sequelize:", sequelize)
 }
 
 fs
