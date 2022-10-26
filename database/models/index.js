@@ -17,7 +17,7 @@ if (config.use_env_variable) {
     config.allowPublicKeyRetrieval,
     {
       host: config.host,
-      dialect: config.dialect
+      dialect: /* config.dialect */ 'mariadb'
     },
     config);
 }
